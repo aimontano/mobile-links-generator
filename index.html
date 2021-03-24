@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Label Links</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css" />
+
+    <style>
+        .container {
+            width: 70%;
+            margin: 20% auto;
+        }
+
+        #copied {
+            color: rgb(191, 18, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-12-24">
+                <h4>Mobile Link Generator</h4>
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <textarea class="pure-input-2-3" placeholder="Enter Custom Label" id="customLabel"
+                            rows="8"></textarea>
+                        <br>
+                        <button class="pure-button pure-button-primary" id="btnGenerate">Generate</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="pure-u-1 pure-u-md-12-24">
+                <h4>Results</h4>
+                <p style="color: red;" id="limit" hidden>EXCEEDS CUSTOM LABEL CHARACTER LIMIT</p>
+                <div id="result">
+
+
+                </div><br>
+                <button class="button-secondary pure-button" id="btnCopy" hidden>Copy</button>
+                <p id="copied" hidden>Copied to clipboard...</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
